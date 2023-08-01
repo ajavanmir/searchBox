@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "yekan";
+    src: url(../fonts/yekan.eot);
+    src: url(../fonts/yekan.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/yekan.ttf) format("truetype"),
+    url(../fonts/yekan.woff) format("woff");
+}
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+body{
+    direction: rtl;
+    font-family: "yekan";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #ffccbc;
+}
+.search{
+    position: relative;
+}
+.search input{
+    font-family: "yekan";
+    box-sizing: border-box;
+    height: 50px;
+    width: 50px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    transition: width 0.4s ease;
+}
+.search.active input{
+    width: 300px;
+}
+.search button{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 0;
+    top: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.search.active button{
+    border-right: none;
+}
+.search i{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/icon-search.png) no-repeat;
+    background-size: contain;
+}
